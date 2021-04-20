@@ -57,10 +57,7 @@ public class Compiler {
     }
     
     public static void main(String args[]) {
-        if (args.length == 0) {
-            System.out.println("***Incorrect usage, try: java compiler.Compiler <file>");
-            System.exit(1);
-        }
-        (new Compiler(args[0])).compileProgram();
+        // enter file name here
+        (new Compiler("src/simple.x")).compileProgram();
     }
 }
